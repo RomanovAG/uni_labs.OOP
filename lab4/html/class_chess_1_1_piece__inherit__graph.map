@@ -1,0 +1,8 @@
+<map id="Chess::Piece" name="Chess::Piece">
+<area shape="rect" id="node2" href="$class_chess_1_1_bishop.html" title="Chess::Bishop" alt="" coords="5,80,112,107"/>
+<area shape="rect" id="node3" href="$class_chess_1_1_king.html" title="Chess::King" alt="" coords="136,80,229,107"/>
+<area shape="rect" id="node4" href="$class_chess_1_1_knight.html" title="Chess::Knight" alt="" coords="253,80,357,107"/>
+<area shape="rect" id="node5" href="$class_chess_1_1_pawn.html" title="Chess::Pawn" alt="" coords="381,80,480,107"/>
+<area shape="rect" id="node6" href="$class_chess_1_1_queen.html" title="Chess::Queen" alt="" coords="505,80,610,107"/>
+<area shape="rect" id="node7" href="$class_chess_1_1_rook.html" title="Chess::Rook" alt="" coords="634,80,731,107"/>
+</map>

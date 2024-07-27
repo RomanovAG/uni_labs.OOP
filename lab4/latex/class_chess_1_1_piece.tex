@@ -1,0 +1,60 @@
+\hypertarget{class_chess_1_1_piece}{}\section{Класс Chess\+:\+:Piece}
+\label{class_chess_1_1_piece}\index{Chess\+::\+Piece@{Chess\+::\+Piece}}
+
+
+Граф наследования\+:Chess\+:\+:Piece\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_chess_1_1_piece__inherit__graph}
+\end{center}
+\end{figure}
+\subsection*{Открытые типы}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_chess_1_1_piece_a65c480b6cb99b4e3732d6c14cf5f75e5}\label{class_chess_1_1_piece_a65c480b6cb99b4e3732d6c14cf5f75e5}} 
+enum {\bfseries Color} \{ {\bfseries W\+H\+I\+TE} = 1, 
+{\bfseries B\+L\+A\+CK}
+ \}
+\item 
+\mbox{\Hypertarget{class_chess_1_1_piece_a691ee828590a8fe4a5aacc8669ed63c4}\label{class_chess_1_1_piece_a691ee828590a8fe4a5aacc8669ed63c4}} 
+enum {\bfseries Name} \{ \newline
+{\bfseries K\+I\+NG}, 
+{\bfseries Q\+U\+E\+EN}, 
+{\bfseries R\+O\+OK}, 
+{\bfseries K\+N\+I\+G\+HT}, 
+\newline
+{\bfseries B\+I\+S\+H\+OP}, 
+{\bfseries P\+A\+WN}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_chess_1_1_piece_a641074d67cbc2f7d7290a8b721a57f16}\label{class_chess_1_1_piece_a641074d67cbc2f7d7290a8b721a57f16}} 
+void {\bfseries set\+Color} (const Color color)
+\item 
+\mbox{\Hypertarget{class_chess_1_1_piece_abfc56a5956d7abf5e2b9765829b113ea}\label{class_chess_1_1_piece_abfc56a5956d7abf5e2b9765829b113ea}} 
+void {\bfseries set\+Name} (const Name name)
+\item 
+\mbox{\Hypertarget{class_chess_1_1_piece_a234a31e7eb30f8f6112893fc97d2e270}\label{class_chess_1_1_piece_a234a31e7eb30f8f6112893fc97d2e270}} 
+Color {\bfseries get\+Color} () const
+\item 
+\mbox{\Hypertarget{class_chess_1_1_piece_a145087e3b290d9a274dc301d3fe530ea}\label{class_chess_1_1_piece_a145087e3b290d9a274dc301d3fe530ea}} 
+Name {\bfseries get\+Name} () const
+\item 
+\mbox{\Hypertarget{class_chess_1_1_piece_a2e94ad5b115beff701856fb947327b36}\label{class_chess_1_1_piece_a2e94ad5b115beff701856fb947327b36}} 
+virtual bool {\bfseries check\+Move} (const \mbox{\hyperlink{class_chess_1_1_position}{Position}} \&pos\+\_\+current, const \mbox{\hyperlink{class_chess_1_1_position}{Position}} \&pos\+\_\+target, const std\+::array$<$ std\+::array$<$ \mbox{\hyperlink{class_chess_1_1_piece}{Piece}} $\ast$, B\+O\+A\+R\+D\+\_\+\+S\+I\+ZE $>$, B\+O\+A\+R\+D\+\_\+\+S\+I\+ZE $>$ \&chess\+\_\+board) const =0
+\item 
+\mbox{\Hypertarget{class_chess_1_1_piece_a6d4afbd864b16f2574cd5af30f961047}\label{class_chess_1_1_piece_a6d4afbd864b16f2574cd5af30f961047}} 
+virtual \mbox{\hyperlink{class_chess_1_1_position}{Position}} $\ast$ {\bfseries return\+Available\+Moves} (int $\ast$list\+\_\+len, const \mbox{\hyperlink{class_chess_1_1_position}{Position}} \&pos\+\_\+current, const std\+::array$<$ std\+::array$<$ \mbox{\hyperlink{class_chess_1_1_piece}{Piece}} $\ast$, B\+O\+A\+R\+D\+\_\+\+S\+I\+ZE $>$, B\+O\+A\+R\+D\+\_\+\+S\+I\+ZE $>$ \&chess\+\_\+board) const =0
+\item 
+\mbox{\Hypertarget{class_chess_1_1_piece_a697016b0e460d10d45d0e75a8fdb82bf}\label{class_chess_1_1_piece_a697016b0e460d10d45d0e75a8fdb82bf}} 
+virtual bool {\bfseries check\+Reachability} (const \mbox{\hyperlink{class_chess_1_1_position}{Position}} \&pos\+\_\+current, const \mbox{\hyperlink{class_chess_1_1_position}{Position}} \&pos\+\_\+target, const std\+::array$<$ std\+::array$<$ \mbox{\hyperlink{class_chess_1_1_piece}{Piece}} $\ast$, B\+O\+A\+R\+D\+\_\+\+S\+I\+ZE $>$, B\+O\+A\+R\+D\+\_\+\+S\+I\+ZE $>$ \&chess\+\_\+board) const =0
+\end{DoxyCompactItemize}
+
+
+Объявления и описания членов классов находятся в файлах\+:\begin{DoxyCompactItemize}
+\item 
+Pieces/piece.\+h\item 
+Pieces/piece.\+cpp\end{DoxyCompactItemize}

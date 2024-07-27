@@ -1,0 +1,41 @@
+\hypertarget{class_chess_1_1_game_history}{}\section{Класс Chess\+:\+:Game\+History}
+\label{class_chess_1_1_game_history}\index{Chess\+::\+Game\+History@{Chess\+::\+Game\+History}}
+\subsection*{Открытые типы}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_chess_1_1_game_history_a1e66f8172e7db7d2f05a5b8c87d1ba0f}\label{class_chess_1_1_game_history_a1e66f8172e7db7d2f05a5b8c87d1ba0f}} 
+enum {\bfseries Move\+Status} \{ {\bfseries N\+O\+\_\+\+M\+O\+VE}, 
+{\bfseries M\+O\+V\+E\+\_\+\+D\+O\+NE}, 
+{\bfseries T\+A\+K\+E\+N\+\_\+\+E\+N\+E\+M\+Y\+\_\+\+P\+I\+E\+CE}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_chess_1_1_game_history_a04ae57210f35d767c974e5ef98756c3b}\label{class_chess_1_1_game_history_a04ae57210f35d767c974e5ef98756c3b}} 
+\mbox{\hyperlink{class_chess_1_1_game_history}{Game\+History}} \& {\bfseries add\+Move\+To\+History} (const char $\ast$move)
+\item 
+\mbox{\Hypertarget{class_chess_1_1_game_history_a6f9576ffb5086eb9706ea88e788cc0d6}\label{class_chess_1_1_game_history_a6f9576ffb5086eb9706ea88e788cc0d6}} 
+\mbox{\hyperlink{class_chess_1_1_game_history}{Game\+History}} \& {\bfseries add\+Move\+To\+History} (const \mbox{\hyperlink{class_chess_1_1_position}{Position}} \&pos\+\_\+current, const \mbox{\hyperlink{class_chess_1_1_position}{Position}} \&pos\+\_\+target, const Piece\+::\+Name piece\+\_\+name, const Move\+Status move\+\_\+status, const Piece\+::\+Name piece\+\_\+name\+\_\+new, const int move\+\_\+result)
+\item 
+\mbox{\Hypertarget{class_chess_1_1_game_history_aafb9294b1c8cfdaad4603c900ddc00aa}\label{class_chess_1_1_game_history_aafb9294b1c8cfdaad4603c900ddc00aa}} 
+\mbox{\hyperlink{class_chess_1_1_game_history}{Game\+History}} \& {\bfseries append\+To\+Last\+Move} (const \mbox{\hyperlink{class_chess_1_1_position}{Position}} \&pos\+\_\+current, const \mbox{\hyperlink{class_chess_1_1_position}{Position}} \&pos\+\_\+target, const Piece\+::\+Name piece\+\_\+name, const Move\+Status move\+\_\+status, const Piece\+::\+Name piece\+\_\+name\+\_\+new, const int move\+\_\+result)
+\item 
+\mbox{\Hypertarget{class_chess_1_1_game_history_ab774acd3d1b1fa6185e567d2fcebb41f}\label{class_chess_1_1_game_history_ab774acd3d1b1fa6185e567d2fcebb41f}} 
+\mbox{\hyperlink{class_chess_1_1_game_history}{Game\+History}} \& {\bfseries delete\+Last\+Move} ()
+\item 
+\mbox{\Hypertarget{class_chess_1_1_game_history_ac55b4d4260cf19775c3263ef41b73500}\label{class_chess_1_1_game_history_ac55b4d4260cf19775c3263ef41b73500}} 
+const char $\ast$ {\bfseries return\+As\+String} () const
+\item 
+\mbox{\Hypertarget{class_chess_1_1_game_history_a4270ac251625e361794ac2f3ceb1dd1f}\label{class_chess_1_1_game_history_a4270ac251625e361794ac2f3ceb1dd1f}} 
+void {\bfseries clear\+History} ()
+\item 
+\mbox{\Hypertarget{class_chess_1_1_game_history_a3fb2cf5a5c699684da9e8cd1e2277c79}\label{class_chess_1_1_game_history_a3fb2cf5a5c699684da9e8cd1e2277c79}} 
+void {\bfseries print\+History} (std\+::ostream \&os) const
+\end{DoxyCompactItemize}
+
+
+Объявления и описания членов классов находятся в файлах\+:\begin{DoxyCompactItemize}
+\item 
+gamehistory.\+h\item 
+gamehistory.\+cpp\end{DoxyCompactItemize}

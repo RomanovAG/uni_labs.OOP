@@ -1,0 +1,42 @@
+\hypertarget{class_chess_1_1_bishop}{}\section{Класс Chess\+:\+:Bishop}
+\label{class_chess_1_1_bishop}\index{Chess\+::\+Bishop@{Chess\+::\+Bishop}}
+
+
+Граф наследования\+:Chess\+:\+:Bishop\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=160pt]{class_chess_1_1_bishop__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Граф связей класса Chess\+:\+:Bishop\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=160pt]{class_chess_1_1_bishop__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_chess_1_1_bishop_a08f1b7e3e379c168958ab6819638d014}\label{class_chess_1_1_bishop_a08f1b7e3e379c168958ab6819638d014}} 
+{\bfseries Bishop} (const Color color)
+\item 
+\mbox{\Hypertarget{class_chess_1_1_bishop_aafc2055191d4ba9df719ca8d35fd3a01}\label{class_chess_1_1_bishop_aafc2055191d4ba9df719ca8d35fd3a01}} 
+bool {\bfseries check\+Move} (const \mbox{\hyperlink{class_chess_1_1_position}{Position}} \&pos\+\_\+current, const \mbox{\hyperlink{class_chess_1_1_position}{Position}} \&pos\+\_\+target, const std\+::array$<$ std\+::array$<$ \mbox{\hyperlink{class_chess_1_1_piece}{Piece}} $\ast$, B\+O\+A\+R\+D\+\_\+\+S\+I\+ZE $>$, B\+O\+A\+R\+D\+\_\+\+S\+I\+ZE $>$ \&chess\+\_\+board) const override
+\item 
+\mbox{\Hypertarget{class_chess_1_1_bishop_a235bab243b981b2d50f8694bbb9e2e77}\label{class_chess_1_1_bishop_a235bab243b981b2d50f8694bbb9e2e77}} 
+\mbox{\hyperlink{class_chess_1_1_position}{Position}} $\ast$ {\bfseries return\+Available\+Moves} (int $\ast$list\+\_\+len, const \mbox{\hyperlink{class_chess_1_1_position}{Position}} \&pos\+\_\+current, const std\+::array$<$ std\+::array$<$ \mbox{\hyperlink{class_chess_1_1_piece}{Piece}} $\ast$, B\+O\+A\+R\+D\+\_\+\+S\+I\+ZE $>$, B\+O\+A\+R\+D\+\_\+\+S\+I\+ZE $>$ \&chess\+\_\+board) const override
+\item 
+\mbox{\Hypertarget{class_chess_1_1_bishop_acad16beae041ce1e7d34b2cac9d6d0f9}\label{class_chess_1_1_bishop_acad16beae041ce1e7d34b2cac9d6d0f9}} 
+bool {\bfseries check\+Reachability} (const \mbox{\hyperlink{class_chess_1_1_position}{Position}} \&pos\+\_\+current, const \mbox{\hyperlink{class_chess_1_1_position}{Position}} \&pos\+\_\+target, const std\+::array$<$ std\+::array$<$ \mbox{\hyperlink{class_chess_1_1_piece}{Piece}} $\ast$, B\+O\+A\+R\+D\+\_\+\+S\+I\+ZE $>$, B\+O\+A\+R\+D\+\_\+\+S\+I\+ZE $>$ \&chess\+\_\+board) const override
+\end{DoxyCompactItemize}
+\subsection*{Дополнительные унаследованные члены}
+
+
+Объявления и описания членов классов находятся в файлах\+:\begin{DoxyCompactItemize}
+\item 
+Pieces/bishop.\+h\item 
+Pieces/bishop.\+cpp\end{DoxyCompactItemize}

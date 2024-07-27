@@ -1,0 +1,63 @@
+\hypertarget{class_chess_1_1_game}{}\section{Класс Chess\+:\+:Game}
+\label{class_chess_1_1_game}\index{Chess\+::\+Game@{Chess\+::\+Game}}
+\subsection*{Открытые типы}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_chess_1_1_game_a46c61f3f01bbe9e153de2d0fb17be7a3}\label{class_chess_1_1_game_a46c61f3f01bbe9e153de2d0fb17be7a3}} 
+enum {\bfseries Game\+Status} \{ {\bfseries N\+O\+\_\+\+G\+A\+ME}, 
+{\bfseries G\+A\+M\+E\+\_\+\+ON}, 
+{\bfseries G\+A\+M\+E\+\_\+\+O\+V\+ER}
+ \}
+\item 
+\mbox{\Hypertarget{class_chess_1_1_game_acf87322c373bb63671b87c5a6b68129d}\label{class_chess_1_1_game_acf87322c373bb63671b87c5a6b68129d}} 
+enum {\bfseries Current\+Game\+Status} \{ {\bfseries N\+O\+T\+H\+I\+NG}, 
+{\bfseries C\+H\+E\+CK}, 
+{\bfseries M\+A\+TE}, 
+{\bfseries S\+T\+A\+L\+E\+\_\+\+M\+A\+TE}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_chess_1_1_game_aec4cf66335f57f6a5f655b750e57e0fa}\label{class_chess_1_1_game_aec4cf66335f57f6a5f655b750e57e0fa}} 
+void {\bfseries set\+Players\+Names} (const char $\ast$player\+\_\+white\+\_\+name, const char $\ast$player\+\_\+black\+\_\+name)
+\item 
+\mbox{\Hypertarget{class_chess_1_1_game_a4efb0d8ba450f51a480afc1e191cc66a}\label{class_chess_1_1_game_a4efb0d8ba450f51a480afc1e191cc66a}} 
+const char $\ast$ {\bfseries get\+Player\+Name} (const Piece\+::\+Color player\+\_\+color) const
+\item 
+\mbox{\Hypertarget{class_chess_1_1_game_a8cab7920c359cf67801ac3fd587fa3d7}\label{class_chess_1_1_game_a8cab7920c359cf67801ac3fd587fa3d7}} 
+Piece\+::\+Color {\bfseries get\+Active\+Player\+Color} () const
+\item 
+\mbox{\Hypertarget{class_chess_1_1_game_a89c89d64fc10d4fd559491f9de98a8a9}\label{class_chess_1_1_game_a89c89d64fc10d4fd559491f9de98a8a9}} 
+void {\bfseries print\+Board} (std\+::ostream \&os) const
+\item 
+\mbox{\Hypertarget{class_chess_1_1_game_ae8638ccdb0ef3bf39a6affa30aa1258f}\label{class_chess_1_1_game_ae8638ccdb0ef3bf39a6affa30aa1258f}} 
+void {\bfseries start\+Game} ()
+\item 
+\mbox{\Hypertarget{class_chess_1_1_game_a46f78f45e092de4878600e290640d38b}\label{class_chess_1_1_game_a46f78f45e092de4878600e290640d38b}} 
+Game\+Status {\bfseries get\+Game\+Status} () const
+\item 
+\mbox{\Hypertarget{class_chess_1_1_game_a5403d6708175f73d8249990f4cdb91eb}\label{class_chess_1_1_game_a5403d6708175f73d8249990f4cdb91eb}} 
+Current\+Game\+Status {\bfseries get\+Current\+Game\+Status} () const
+\item 
+\mbox{\Hypertarget{class_chess_1_1_game_af8d2110ad5a08a88cab48c52be58fe42}\label{class_chess_1_1_game_af8d2110ad5a08a88cab48c52be58fe42}} 
+bool {\bfseries make\+Move} (const char file\+\_\+current, const int rank\+\_\+current, const char file\+\_\+target, const int rank\+\_\+target)
+\item 
+\mbox{\Hypertarget{class_chess_1_1_game_aae5ab8b7d4591c466abd8d53f453415b}\label{class_chess_1_1_game_aae5ab8b7d4591c466abd8d53f453415b}} 
+bool {\bfseries make\+Move} (const int x1, const int y1, const int x2, const int y2)
+\item 
+\mbox{\Hypertarget{class_chess_1_1_game_ad41f5a27992a255dfda146b2955b2b08}\label{class_chess_1_1_game_ad41f5a27992a255dfda146b2955b2b08}} 
+bool {\bfseries make\+Move} (const \mbox{\hyperlink{class_chess_1_1_position}{Position}} \&pos\+\_\+current, const \mbox{\hyperlink{class_chess_1_1_position}{Position}} \&pos\+\_\+target)
+\item 
+\mbox{\Hypertarget{class_chess_1_1_game_a76a66b4e73ba5086b587dac9b5539840}\label{class_chess_1_1_game_a76a66b4e73ba5086b587dac9b5539840}} 
+void {\bfseries add\+Time\+To\+Previous\+Player} (const long long time\+\_\+sec)
+\item 
+\mbox{\Hypertarget{class_chess_1_1_game_ade1027e22302d19ac285fec5a0a3d4c5}\label{class_chess_1_1_game_ade1027e22302d19ac285fec5a0a3d4c5}} 
+void {\bfseries print\+History} (std\+::ostream \&os) const
+\end{DoxyCompactItemize}
+
+
+Объявления и описания членов классов находятся в файлах\+:\begin{DoxyCompactItemize}
+\item 
+game.\+h\item 
+game.\+cpp\end{DoxyCompactItemize}

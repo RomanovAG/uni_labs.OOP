@@ -1,0 +1,143 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.14"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Chess: Класс Chess::Game</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Chess
+   </div>
+   <div id="projectbrief">Шахматы</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.14 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><b>Chess</b></li><li class="navelem"><a class="el" href="class_chess_1_1_game.html">Game</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-types">Открытые типы</a> &#124;
+<a href="#pub-methods">Открытые члены</a> &#124;
+<a href="class_chess_1_1_game-members.html">Полный список членов класса</a>  </div>
+  <div class="headertitle">
+<div class="title">Класс Chess::Game</div>  </div>
+</div><!--header-->
+<div class="contents">
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Открытые типы</h2></td></tr>
+<tr class="memitem:a46c61f3f01bbe9e153de2d0fb17be7a3"><td class="memItemLeft" align="right" valign="top"><a id="a46c61f3f01bbe9e153de2d0fb17be7a3"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>GameStatus</b> { <b>NO_GAME</b>, 
+<b>GAME_ON</b>, 
+<b>GAME_OVER</b>
+ }</td></tr>
+<tr class="separator:a46c61f3f01bbe9e153de2d0fb17be7a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acf87322c373bb63671b87c5a6b68129d"><td class="memItemLeft" align="right" valign="top"><a id="acf87322c373bb63671b87c5a6b68129d"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>CurrentGameStatus</b> { <b>NOTHING</b>, 
+<b>CHECK</b>, 
+<b>MATE</b>, 
+<b>STALE_MATE</b>
+ }</td></tr>
+<tr class="separator:acf87322c373bb63671b87c5a6b68129d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Открытые члены</h2></td></tr>
+<tr class="memitem:aec4cf66335f57f6a5f655b750e57e0fa"><td class="memItemLeft" align="right" valign="top"><a id="aec4cf66335f57f6a5f655b750e57e0fa"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setPlayersNames</b> (const char *player_white_name, const char *player_black_name)</td></tr>
+<tr class="separator:aec4cf66335f57f6a5f655b750e57e0fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4efb0d8ba450f51a480afc1e191cc66a"><td class="memItemLeft" align="right" valign="top"><a id="a4efb0d8ba450f51a480afc1e191cc66a"></a>
+const char *&#160;</td><td class="memItemRight" valign="bottom"><b>getPlayerName</b> (const Piece::Color player_color) const</td></tr>
+<tr class="separator:a4efb0d8ba450f51a480afc1e191cc66a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8cab7920c359cf67801ac3fd587fa3d7"><td class="memItemLeft" align="right" valign="top"><a id="a8cab7920c359cf67801ac3fd587fa3d7"></a>
+Piece::Color&#160;</td><td class="memItemRight" valign="bottom"><b>getActivePlayerColor</b> () const</td></tr>
+<tr class="separator:a8cab7920c359cf67801ac3fd587fa3d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a89c89d64fc10d4fd559491f9de98a8a9"><td class="memItemLeft" align="right" valign="top"><a id="a89c89d64fc10d4fd559491f9de98a8a9"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>printBoard</b> (std::ostream &amp;os) const</td></tr>
+<tr class="separator:a89c89d64fc10d4fd559491f9de98a8a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae8638ccdb0ef3bf39a6affa30aa1258f"><td class="memItemLeft" align="right" valign="top"><a id="ae8638ccdb0ef3bf39a6affa30aa1258f"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>startGame</b> ()</td></tr>
+<tr class="separator:ae8638ccdb0ef3bf39a6affa30aa1258f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a46f78f45e092de4878600e290640d38b"><td class="memItemLeft" align="right" valign="top"><a id="a46f78f45e092de4878600e290640d38b"></a>
+GameStatus&#160;</td><td class="memItemRight" valign="bottom"><b>getGameStatus</b> () const</td></tr>
+<tr class="separator:a46f78f45e092de4878600e290640d38b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5403d6708175f73d8249990f4cdb91eb"><td class="memItemLeft" align="right" valign="top"><a id="a5403d6708175f73d8249990f4cdb91eb"></a>
+CurrentGameStatus&#160;</td><td class="memItemRight" valign="bottom"><b>getCurrentGameStatus</b> () const</td></tr>
+<tr class="separator:a5403d6708175f73d8249990f4cdb91eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af8d2110ad5a08a88cab48c52be58fe42"><td class="memItemLeft" align="right" valign="top"><a id="af8d2110ad5a08a88cab48c52be58fe42"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>makeMove</b> (const char file_current, const int rank_current, const char file_target, const int rank_target)</td></tr>
+<tr class="separator:af8d2110ad5a08a88cab48c52be58fe42"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aae5ab8b7d4591c466abd8d53f453415b"><td class="memItemLeft" align="right" valign="top"><a id="aae5ab8b7d4591c466abd8d53f453415b"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>makeMove</b> (const int x1, const int y1, const int x2, const int y2)</td></tr>
+<tr class="separator:aae5ab8b7d4591c466abd8d53f453415b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad41f5a27992a255dfda146b2955b2b08"><td class="memItemLeft" align="right" valign="top"><a id="ad41f5a27992a255dfda146b2955b2b08"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>makeMove</b> (const <a class="el" href="class_chess_1_1_position.html">Position</a> &amp;pos_current, const <a class="el" href="class_chess_1_1_position.html">Position</a> &amp;pos_target)</td></tr>
+<tr class="separator:ad41f5a27992a255dfda146b2955b2b08"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a76a66b4e73ba5086b587dac9b5539840"><td class="memItemLeft" align="right" valign="top"><a id="a76a66b4e73ba5086b587dac9b5539840"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>addTimeToPreviousPlayer</b> (const long long time_sec)</td></tr>
+<tr class="separator:a76a66b4e73ba5086b587dac9b5539840"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade1027e22302d19ac285fec5a0a3d4c5"><td class="memItemLeft" align="right" valign="top"><a id="ade1027e22302d19ac285fec5a0a3d4c5"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>printHistory</b> (std::ostream &amp;os) const</td></tr>
+<tr class="separator:ade1027e22302d19ac285fec5a0a3d4c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<hr/>Объявления и описания членов классов находятся в файлах:<ul>
+<li><a class="el" href="game_8h_source.html">game.h</a></li>
+<li>game.cpp</li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.14
+</small></address>
+</body>
+</html>

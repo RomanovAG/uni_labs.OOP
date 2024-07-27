@@ -1,0 +1,42 @@
+\hypertarget{class_chess_1_1_king}{}\section{Класс Chess\+:\+:King}
+\label{class_chess_1_1_king}\index{Chess\+::\+King@{Chess\+::\+King}}
+
+
+Граф наследования\+:Chess\+:\+:King\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=155pt]{class_chess_1_1_king__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Граф связей класса Chess\+:\+:King\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=155pt]{class_chess_1_1_king__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_chess_1_1_king_a66db2fe8f54a001bd181591cdccba958}\label{class_chess_1_1_king_a66db2fe8f54a001bd181591cdccba958}} 
+{\bfseries King} (const Color color)
+\item 
+\mbox{\Hypertarget{class_chess_1_1_king_a2a99eca45d27801a80eaded7aee690cb}\label{class_chess_1_1_king_a2a99eca45d27801a80eaded7aee690cb}} 
+bool {\bfseries check\+Move} (const \mbox{\hyperlink{class_chess_1_1_position}{Position}} \&pos\+\_\+current, const \mbox{\hyperlink{class_chess_1_1_position}{Position}} \&pos\+\_\+target, const std\+::array$<$ std\+::array$<$ \mbox{\hyperlink{class_chess_1_1_piece}{Piece}} $\ast$, B\+O\+A\+R\+D\+\_\+\+S\+I\+ZE $>$, B\+O\+A\+R\+D\+\_\+\+S\+I\+ZE $>$ \&chess\+\_\+board) const override
+\item 
+\mbox{\Hypertarget{class_chess_1_1_king_a07ef876e1c3196200042cacccfd33cbb}\label{class_chess_1_1_king_a07ef876e1c3196200042cacccfd33cbb}} 
+\mbox{\hyperlink{class_chess_1_1_position}{Position}} $\ast$ {\bfseries return\+Available\+Moves} (int $\ast$list\+\_\+len, const \mbox{\hyperlink{class_chess_1_1_position}{Position}} \&pos\+\_\+current, const std\+::array$<$ std\+::array$<$ \mbox{\hyperlink{class_chess_1_1_piece}{Piece}} $\ast$, B\+O\+A\+R\+D\+\_\+\+S\+I\+ZE $>$, B\+O\+A\+R\+D\+\_\+\+S\+I\+ZE $>$ \&chess\+\_\+board) const override
+\item 
+\mbox{\Hypertarget{class_chess_1_1_king_a986c2dd316a9daec8714a773fa575d79}\label{class_chess_1_1_king_a986c2dd316a9daec8714a773fa575d79}} 
+bool {\bfseries check\+Reachability} (const \mbox{\hyperlink{class_chess_1_1_position}{Position}} \&pos\+\_\+current, const \mbox{\hyperlink{class_chess_1_1_position}{Position}} \&pos\+\_\+target, const std\+::array$<$ std\+::array$<$ \mbox{\hyperlink{class_chess_1_1_piece}{Piece}} $\ast$, B\+O\+A\+R\+D\+\_\+\+S\+I\+ZE $>$, B\+O\+A\+R\+D\+\_\+\+S\+I\+ZE $>$ \&chess\+\_\+board) const override
+\end{DoxyCompactItemize}
+\subsection*{Дополнительные унаследованные члены}
+
+
+Объявления и описания членов классов находятся в файлах\+:\begin{DoxyCompactItemize}
+\item 
+Pieces/king.\+h\item 
+Pieces/king.\+cpp\end{DoxyCompactItemize}

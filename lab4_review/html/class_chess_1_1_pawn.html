@@ -1,0 +1,152 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.14"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Chess: Класс Chess::Pawn</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Chess
+   </div>
+   <div id="projectbrief">Шахматы</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.14 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><b>Chess</b></li><li class="navelem"><a class="el" href="class_chess_1_1_pawn.html">Pawn</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Открытые члены</a> &#124;
+<a href="class_chess_1_1_pawn-members.html">Полный список членов класса</a>  </div>
+  <div class="headertitle">
+<div class="title">Класс Chess::Pawn</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="dynheader">
+Граф наследования:Chess::Pawn:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_chess_1_1_pawn__inherit__graph.png" border="0" usemap="#_chess_1_1_pawn_inherit__map" alt="Inheritance graph"/></div>
+<map name="_chess_1_1_pawn_inherit__map" id="_chess_1_1_pawn_inherit__map">
+<area shape="rect" id="node2" href="class_chess_1_1_piece.html" title="Chess::Piece" alt="" coords="5,5,105,32"/>
+</map>
+<center><span class="legend">[<a href="graph_legend.html">см. легенду</a>]</span></center></div>
+<div class="dynheader">
+Граф связей класса Chess::Pawn:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_chess_1_1_pawn__coll__graph.png" border="0" usemap="#_chess_1_1_pawn_coll__map" alt="Collaboration graph"/></div>
+<map name="_chess_1_1_pawn_coll__map" id="_chess_1_1_pawn_coll__map">
+<area shape="rect" id="node2" href="class_chess_1_1_piece.html" title="Chess::Piece" alt="" coords="5,5,105,32"/>
+</map>
+<center><span class="legend">[<a href="graph_legend.html">см. легенду</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Открытые члены</h2></td></tr>
+<tr class="memitem:ab4d91a80c4da18b87f44962ec68a03cb"><td class="memItemLeft" align="right" valign="top"><a id="ab4d91a80c4da18b87f44962ec68a03cb"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>Pawn</b> (const Color color)</td></tr>
+<tr class="separator:ab4d91a80c4da18b87f44962ec68a03cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae9725199f9bd4f3e37e4a05dd3f21bdc"><td class="memItemLeft" align="right" valign="top"><a id="ae9725199f9bd4f3e37e4a05dd3f21bdc"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>checkMove</b> (const <a class="el" href="class_chess_1_1_position.html">Position</a> &amp;pos_current, const <a class="el" href="class_chess_1_1_position.html">Position</a> &amp;pos_target, const std::array&lt; std::array&lt; <a class="el" href="class_chess_1_1_piece.html">Piece</a> *, BOARD_SIZE &gt;, BOARD_SIZE &gt; &amp;chess_board) const override</td></tr>
+<tr class="separator:ae9725199f9bd4f3e37e4a05dd3f21bdc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a839f5712501473ca3dc87ca8de2eec37"><td class="memItemLeft" align="right" valign="top"><a id="a839f5712501473ca3dc87ca8de2eec37"></a>
+<a class="el" href="class_chess_1_1_position.html">Position</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>returnAvailableMoves</b> (int *list_len, const <a class="el" href="class_chess_1_1_position.html">Position</a> &amp;pos_current, const std::array&lt; std::array&lt; <a class="el" href="class_chess_1_1_piece.html">Piece</a> *, BOARD_SIZE &gt;, BOARD_SIZE &gt; &amp;chess_board) const override</td></tr>
+<tr class="separator:a839f5712501473ca3dc87ca8de2eec37"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a56116e06fc8e4a8236858bc6991b9bc0"><td class="memItemLeft" align="right" valign="top"><a id="a56116e06fc8e4a8236858bc6991b9bc0"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>checkReachability</b> (const <a class="el" href="class_chess_1_1_position.html">Position</a> &amp;pos_current, const <a class="el" href="class_chess_1_1_position.html">Position</a> &amp;pos_target, const std::array&lt; std::array&lt; <a class="el" href="class_chess_1_1_piece.html">Piece</a> *, BOARD_SIZE &gt;, BOARD_SIZE &gt; &amp;chess_board) const override</td></tr>
+<tr class="separator:a56116e06fc8e4a8236858bc6991b9bc0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_class_chess_1_1_piece"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_chess_1_1_piece')"><img src="closed.png" alt="-"/>&#160;Открытые члены унаследованные от <a class="el" href="class_chess_1_1_piece.html">Chess::Piece</a></td></tr>
+<tr class="memitem:a641074d67cbc2f7d7290a8b721a57f16 inherit pub_methods_class_chess_1_1_piece"><td class="memItemLeft" align="right" valign="top"><a id="a641074d67cbc2f7d7290a8b721a57f16"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setColor</b> (const Color color)</td></tr>
+<tr class="separator:a641074d67cbc2f7d7290a8b721a57f16 inherit pub_methods_class_chess_1_1_piece"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abfc56a5956d7abf5e2b9765829b113ea inherit pub_methods_class_chess_1_1_piece"><td class="memItemLeft" align="right" valign="top"><a id="abfc56a5956d7abf5e2b9765829b113ea"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setName</b> (const Name name)</td></tr>
+<tr class="separator:abfc56a5956d7abf5e2b9765829b113ea inherit pub_methods_class_chess_1_1_piece"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a234a31e7eb30f8f6112893fc97d2e270 inherit pub_methods_class_chess_1_1_piece"><td class="memItemLeft" align="right" valign="top"><a id="a234a31e7eb30f8f6112893fc97d2e270"></a>
+Color&#160;</td><td class="memItemRight" valign="bottom"><b>getColor</b> () const</td></tr>
+<tr class="separator:a234a31e7eb30f8f6112893fc97d2e270 inherit pub_methods_class_chess_1_1_piece"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a145087e3b290d9a274dc301d3fe530ea inherit pub_methods_class_chess_1_1_piece"><td class="memItemLeft" align="right" valign="top"><a id="a145087e3b290d9a274dc301d3fe530ea"></a>
+Name&#160;</td><td class="memItemRight" valign="bottom"><b>getName</b> () const</td></tr>
+<tr class="separator:a145087e3b290d9a274dc301d3fe530ea inherit pub_methods_class_chess_1_1_piece"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
+Дополнительные унаследованные члены</h2></td></tr>
+<tr class="inherit_header pub_types_class_chess_1_1_piece"><td colspan="2" onclick="javascript:toggleInherit('pub_types_class_chess_1_1_piece')"><img src="closed.png" alt="-"/>&#160;Открытые типы унаследованные от <a class="el" href="class_chess_1_1_piece.html">Chess::Piece</a></td></tr>
+<tr class="memitem:a65c480b6cb99b4e3732d6c14cf5f75e5 inherit pub_types_class_chess_1_1_piece"><td class="memItemLeft" align="right" valign="top"><a id="a65c480b6cb99b4e3732d6c14cf5f75e5"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>Color</b> { <b>WHITE</b> = 1, 
+<b>BLACK</b>
+ }</td></tr>
+<tr class="separator:a65c480b6cb99b4e3732d6c14cf5f75e5 inherit pub_types_class_chess_1_1_piece"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a691ee828590a8fe4a5aacc8669ed63c4 inherit pub_types_class_chess_1_1_piece"><td class="memItemLeft" align="right" valign="top"><a id="a691ee828590a8fe4a5aacc8669ed63c4"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>Name</b> { <br />
+&#160;&#160;<b>KING</b>, 
+<b>QUEEN</b>, 
+<b>ROOK</b>, 
+<b>KNIGHT</b>, 
+<br />
+&#160;&#160;<b>BISHOP</b>, 
+<b>PAWN</b>
+<br />
+ }</td></tr>
+<tr class="separator:a691ee828590a8fe4a5aacc8669ed63c4 inherit pub_types_class_chess_1_1_piece"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<hr/>Объявления и описания членов классов находятся в файлах:<ul>
+<li>Pieces/<a class="el" href="pawn_8h_source.html">pawn.h</a></li>
+<li>Pieces/pawn.cpp</li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.14
+</small></address>
+</body>
+</html>

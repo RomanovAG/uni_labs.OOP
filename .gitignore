@@ -1,0 +1,7 @@
+build*/
+foreign_labs/
+ttt/
+
+*.txt.user
+*.zip
+*.rar
